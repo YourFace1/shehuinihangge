@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#D0C2FB"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="《"
+            android:textColor="#ffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购物车"
+            android:textColor="#FD4F3A"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="120dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="100dp"
+            android:text="编辑"
+            android:textColor="#ffff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ExpandableListView
+        android:layout_weight="1"
+        android:id="@+id/ex"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:groupIndicator="@null"
+        ></ExpandableListView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#ffff"
+        >
+
+        <CheckBox
+            android:id="@+id/cb_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全选"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center_vertical"
+            android:text="合计："
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="¥"
+            android:textColor="#FF8E01"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/shop_allmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#FF8E01"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/shop_count"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textColor="#ffff"
+            android:text="结算"
+            android:textSize="20sp"
+            android:background="#FF8E01"
+            android:gravity="center"
+            android:layout_marginLeft="90dp"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>
